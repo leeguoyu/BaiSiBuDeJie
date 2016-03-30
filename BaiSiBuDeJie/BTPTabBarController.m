@@ -11,6 +11,7 @@
 #import "BTPNewViewController.h"
 #import "BTPFriendTrendsViewController.h"
 #import "BTPMeViewController.h"
+#import "BTPTabBar.h"
 
 @interface BTPTabBarController ()
 
@@ -41,6 +42,10 @@
     [self setupChildVC:[BTPNewViewController alloc] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     [self setupChildVC:[BTPFriendTrendsViewController alloc] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     [self setupChildVC:[BTPMeViewController alloc] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    
+    //用KVC的方法替换系统tabBar
+    [self setValue:[[BTPTabBar alloc] init] forKey:@"tabBar"];
+    
     
 }
 

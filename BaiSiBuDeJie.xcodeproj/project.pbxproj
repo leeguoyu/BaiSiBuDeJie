@@ -15,6 +15,7 @@
 		6395E48F1CAA910A008776EE /* BTPNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E48E1CAA910A008776EE /* BTPNewViewController.m */; };
 		6395E4921CAA9119008776EE /* BTPFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4911CAA9119008776EE /* BTPFriendTrendsViewController.m */; };
 		6395E4951CAA911F008776EE /* BTPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4941CAA911F008776EE /* BTPMeViewController.m */; };
+		6395E4981CABE274008776EE /* BTPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4971CABE274008776EE /* BTPTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		6395E4911CAA9119008776EE /* BTPFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPFriendTrendsViewController.m; sourceTree = "<group>"; };
 		6395E4931CAA911F008776EE /* BTPMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPMeViewController.h; sourceTree = "<group>"; };
 		6395E4941CAA911F008776EE /* BTPMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPMeViewController.m; sourceTree = "<group>"; };
+		6395E4961CABE274008776EE /* BTPTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPTabBar.h; sourceTree = "<group>"; };
+		6395E4971CABE274008776EE /* BTPTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 				6395E4741CAA7D28008776EE /* AppDelegate.m */,
 				6395E4871CAA8751008776EE /* BTPTabBarController.h */,
 				6395E4881CAA8751008776EE /* BTPTabBarController.m */,
+				6395E4961CABE274008776EE /* BTPTabBar.h */,
+				6395E4971CABE274008776EE /* BTPTabBar.m */,
 				6395E48A1CAA90FD008776EE /* BTPEssenceViewController.h */,
 				6395E48B1CAA90FD008776EE /* BTPEssenceViewController.m */,
 				6395E48D1CAA910A008776EE /* BTPNewViewController.h */,
@@ -163,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6395E4981CABE274008776EE /* BTPTabBar.m in Sources */,
 				6395E48C1CAA90FD008776EE /* BTPEssenceViewController.m in Sources */,
 				6395E4751CAA7D28008776EE /* AppDelegate.m in Sources */,
 				6395E4951CAA911F008776EE /* BTPMeViewController.m in Sources */,
@@ -303,6 +309,7 @@
 				6395E4861CAA7D28008776EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
