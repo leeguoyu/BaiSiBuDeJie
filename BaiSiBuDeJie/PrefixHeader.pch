@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  BaiSiBuDeJie
+//
+//  Created by leeguoyu on 16/4/2.
+//  Copyright © 2016年 leeguoyu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//重写的frame方法
+#import "UIView+BTPExtension.h"
+
+//重写的导航栏按钮方法
+#import "UIBarButtonItem+BTPExtension.h"
+
+
+//更高打印信息：程序发布时将所有log信息设为空
+#ifdef DEBUG
+#define BTPLog(...) NSLog(__VA_ARGS__)
+#else
+#define BTPLog(...)
+#endif
+
+//打印function
+#define BTPLogFunc BTPLog(@"%s", __func__);
+
+
+#endif /* PrefixHeader_pch */

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		635726941CAFB9450000FB71 /* UIView+BTPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 635726931CAFB9450000FB71 /* UIView+BTPExtension.m */; };
+		635726981CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 635726971CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.m */; };
 		6395E4721CAA7D28008776EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4711CAA7D28008776EE /* main.m */; };
 		6395E4751CAA7D28008776EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4741CAA7D28008776EE /* AppDelegate.m */; };
 		6395E47D1CAA7D28008776EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6395E47C1CAA7D28008776EE /* Assets.xcassets */; };
@@ -19,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		635726921CAFB9450000FB71 /* UIView+BTPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BTPExtension.h"; sourceTree = "<group>"; };
+		635726931CAFB9450000FB71 /* UIView+BTPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BTPExtension.m"; sourceTree = "<group>"; };
+		635726951CAFB9900000FB71 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		635726961CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BTPExtension.h"; sourceTree = "<group>"; };
+		635726971CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BTPExtension.m"; sourceTree = "<group>"; };
 		6395E46D1CAA7D28008776EE /* BaiSiBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiSiBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6395E4711CAA7D28008776EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6395E4731CAA7D28008776EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +90,11 @@
 				6395E4911CAA9119008776EE /* BTPFriendTrendsViewController.m */,
 				6395E4931CAA911F008776EE /* BTPMeViewController.h */,
 				6395E4941CAA911F008776EE /* BTPMeViewController.m */,
+				635726921CAFB9450000FB71 /* UIView+BTPExtension.h */,
+				635726931CAFB9450000FB71 /* UIView+BTPExtension.m */,
+				635726961CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.h */,
+				635726971CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.m */,
+				635726951CAFB9900000FB71 /* PrefixHeader.pch */,
 				6395E47C1CAA7D28008776EE /* Assets.xcassets */,
 				6395E4811CAA7D28008776EE /* Info.plist */,
 				6395E4701CAA7D28008776EE /* Supporting Files */,
@@ -169,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6395E4981CABE274008776EE /* BTPTabBar.m in Sources */,
+				635726941CAFB9450000FB71 /* UIView+BTPExtension.m in Sources */,
 				6395E48C1CAA90FD008776EE /* BTPEssenceViewController.m in Sources */,
 				6395E4751CAA7D28008776EE /* AppDelegate.m in Sources */,
 				6395E4951CAA911F008776EE /* BTPMeViewController.m in Sources */,
@@ -176,6 +189,7 @@
 				6395E48F1CAA910A008776EE /* BTPNewViewController.m in Sources */,
 				6395E4721CAA7D28008776EE /* main.m in Sources */,
 				6395E4921CAA9119008776EE /* BTPFriendTrendsViewController.m in Sources */,
+				635726981CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +283,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = BaiSiBuDeJie/PrefixHeader.pch;
 				INFOPLIST_FILE = BaiSiBuDeJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -282,6 +298,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = BaiSiBuDeJie/PrefixHeader.pch;
 				INFOPLIST_FILE = BaiSiBuDeJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
