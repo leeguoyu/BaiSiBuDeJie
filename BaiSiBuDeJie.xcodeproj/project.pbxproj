@@ -7,43 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		635726941CAFB9450000FB71 /* UIView+BTPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 635726931CAFB9450000FB71 /* UIView+BTPExtension.m */; };
-		635726981CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 635726971CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.m */; };
+		1C6CAA4AA023577DC3660BAC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE87DA6EC7457EC9124B138 /* libPods.a */; };
+		6357269A1CB0C9EF0000FB71 /* Class in Resources */ = {isa = PBXBuildFile; fileRef = 635726991CB0C9EF0000FB71 /* Class */; };
+		6366ECC31CB0D0500065CF0B /* BTPEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECC21CB0D0500065CF0B /* BTPEssenceViewController.m */; };
+		6366ECCA1CB0D0E30065CF0B /* BTPNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECC91CB0D0E30065CF0B /* BTPNewViewController.m */; };
+		6366ECCF1CB0D11D0065CF0B /* BTPFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECCE1CB0D11D0065CF0B /* BTPFriendTrendsViewController.m */; };
+		6366ECD41CB0D13B0065CF0B /* BTPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECD31CB0D13B0065CF0B /* BTPMeViewController.m */; };
+		6366ECDD1CB0D1CB0065CF0B /* UIBarButtonItem+BTPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECDA1CB0D1CB0065CF0B /* UIBarButtonItem+BTPExtension.m */; };
+		6366ECDE1CB0D1CB0065CF0B /* UIView+BTPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECDC1CB0D1CB0065CF0B /* UIView+BTPExtension.m */; };
+		6366ECE11CB0D1E10065CF0B /* BTPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECE01CB0D1E10065CF0B /* BTPTabBarController.m */; };
+		6366ECE41CB0D1EE0065CF0B /* BTPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECE31CB0D1EE0065CF0B /* BTPTabBar.m */; };
+		6366ECEA1CB0F8480065CF0B /* BTPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECE91CB0F8480065CF0B /* BTPNavigationController.m */; };
+		6366ECEC1CB107D20065CF0B /* BTPFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6366ECEB1CB107D20065CF0B /* BTPFriendTrendsViewController.xib */; };
+		6366ECF01CB114800065CF0B /* BTPRecommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECEE1CB114800065CF0B /* BTPRecommandViewController.m */; };
+		6366ECF11CB114800065CF0B /* BTPRecommandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6366ECEF1CB114800065CF0B /* BTPRecommandViewController.xib */; };
+		6366ECF31CB133060065CF0B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECF21CB133060065CF0B /* Foundation+Log.m */; };
+		6366ECF71CB13F4E0065CF0B /* BTPRecommandCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECF61CB13F4E0065CF0B /* BTPRecommandCategory.m */; };
 		6395E4721CAA7D28008776EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4711CAA7D28008776EE /* main.m */; };
 		6395E4751CAA7D28008776EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4741CAA7D28008776EE /* AppDelegate.m */; };
 		6395E47D1CAA7D28008776EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6395E47C1CAA7D28008776EE /* Assets.xcassets */; };
-		6395E4891CAA8751008776EE /* BTPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4881CAA8751008776EE /* BTPTabBarController.m */; };
-		6395E48C1CAA90FD008776EE /* BTPEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E48B1CAA90FD008776EE /* BTPEssenceViewController.m */; };
-		6395E48F1CAA910A008776EE /* BTPNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E48E1CAA910A008776EE /* BTPNewViewController.m */; };
-		6395E4921CAA9119008776EE /* BTPFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4911CAA9119008776EE /* BTPFriendTrendsViewController.m */; };
-		6395E4951CAA911F008776EE /* BTPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4941CAA911F008776EE /* BTPMeViewController.m */; };
-		6395E4981CABE274008776EE /* BTPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4971CABE274008776EE /* BTPTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		635726921CAFB9450000FB71 /* UIView+BTPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BTPExtension.h"; sourceTree = "<group>"; };
-		635726931CAFB9450000FB71 /* UIView+BTPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BTPExtension.m"; sourceTree = "<group>"; };
+		04F398B6AAE945DC2961CA85 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4DACD782380BC2BC7D13844F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		635726951CAFB9900000FB71 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		635726961CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BTPExtension.h"; sourceTree = "<group>"; };
-		635726971CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BTPExtension.m"; sourceTree = "<group>"; };
+		635726991CB0C9EF0000FB71 /* Class */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Class; path = /Users/leeguoyu/GitHub/BaiSiBuDeJie/BaiSiBuDeJie/Class; sourceTree = "<absolute>"; };
+		6366ECC11CB0D0500065CF0B /* BTPEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPEssenceViewController.h; path = Class/Essence/Controller/BTPEssenceViewController.h; sourceTree = "<group>"; };
+		6366ECC21CB0D0500065CF0B /* BTPEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPEssenceViewController.m; path = Class/Essence/Controller/BTPEssenceViewController.m; sourceTree = "<group>"; };
+		6366ECC81CB0D0E30065CF0B /* BTPNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPNewViewController.h; path = Class/New/Controller/BTPNewViewController.h; sourceTree = "<group>"; };
+		6366ECC91CB0D0E30065CF0B /* BTPNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPNewViewController.m; path = Class/New/Controller/BTPNewViewController.m; sourceTree = "<group>"; };
+		6366ECCD1CB0D11D0065CF0B /* BTPFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPFriendTrendsViewController.h; path = Class/FriendTrends/Controller/BTPFriendTrendsViewController.h; sourceTree = "<group>"; };
+		6366ECCE1CB0D11D0065CF0B /* BTPFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPFriendTrendsViewController.m; path = Class/FriendTrends/Controller/BTPFriendTrendsViewController.m; sourceTree = "<group>"; };
+		6366ECD21CB0D13B0065CF0B /* BTPMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPMeViewController.h; path = Class/Me/Controller/BTPMeViewController.h; sourceTree = "<group>"; };
+		6366ECD31CB0D13B0065CF0B /* BTPMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPMeViewController.m; path = Class/Me/Controller/BTPMeViewController.m; sourceTree = "<group>"; };
+		6366ECD91CB0D1CB0065CF0B /* UIBarButtonItem+BTPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+BTPExtension.h"; path = "Class/Others/Category/UIBarButtonItem+BTPExtension.h"; sourceTree = "<group>"; };
+		6366ECDA1CB0D1CB0065CF0B /* UIBarButtonItem+BTPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+BTPExtension.m"; path = "Class/Others/Category/UIBarButtonItem+BTPExtension.m"; sourceTree = "<group>"; };
+		6366ECDB1CB0D1CB0065CF0B /* UIView+BTPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+BTPExtension.h"; path = "Class/Others/Category/UIView+BTPExtension.h"; sourceTree = "<group>"; };
+		6366ECDC1CB0D1CB0065CF0B /* UIView+BTPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+BTPExtension.m"; path = "Class/Others/Category/UIView+BTPExtension.m"; sourceTree = "<group>"; };
+		6366ECDF1CB0D1E10065CF0B /* BTPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPTabBarController.h; path = Class/Others/Controller/BTPTabBarController.h; sourceTree = "<group>"; };
+		6366ECE01CB0D1E10065CF0B /* BTPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPTabBarController.m; path = Class/Others/Controller/BTPTabBarController.m; sourceTree = "<group>"; };
+		6366ECE21CB0D1EE0065CF0B /* BTPTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPTabBar.h; path = Class/Others/View/BTPTabBar.h; sourceTree = "<group>"; };
+		6366ECE31CB0D1EE0065CF0B /* BTPTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPTabBar.m; path = Class/Others/View/BTPTabBar.m; sourceTree = "<group>"; };
+		6366ECE81CB0F8480065CF0B /* BTPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPNavigationController.h; path = Class/Others/Controller/BTPNavigationController.h; sourceTree = "<group>"; };
+		6366ECE91CB0F8480065CF0B /* BTPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPNavigationController.m; path = Class/Others/Controller/BTPNavigationController.m; sourceTree = "<group>"; };
+		6366ECEB1CB107D20065CF0B /* BTPFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTPFriendTrendsViewController.xib; path = Class/FriendTrends/Controller/BTPFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		6366ECED1CB114800065CF0B /* BTPRecommandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPRecommandViewController.h; path = Class/FriendTrends/Controller/BTPRecommandViewController.h; sourceTree = "<group>"; };
+		6366ECEE1CB114800065CF0B /* BTPRecommandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPRecommandViewController.m; path = Class/FriendTrends/Controller/BTPRecommandViewController.m; sourceTree = "<group>"; };
+		6366ECEF1CB114800065CF0B /* BTPRecommandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTPRecommandViewController.xib; path = Class/FriendTrends/Controller/BTPRecommandViewController.xib; sourceTree = "<group>"; };
+		6366ECF21CB133060065CF0B /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Foundation+Log.m"; path = "Class/Others/Foundation+Log.m"; sourceTree = "<group>"; };
+		6366ECF51CB13F4E0065CF0B /* BTPRecommandCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPRecommandCategory.h; path = Class/FriendTrends/Model/BTPRecommandCategory.h; sourceTree = "<group>"; };
+		6366ECF61CB13F4E0065CF0B /* BTPRecommandCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPRecommandCategory.m; path = Class/FriendTrends/Model/BTPRecommandCategory.m; sourceTree = "<group>"; };
 		6395E46D1CAA7D28008776EE /* BaiSiBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiSiBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6395E4711CAA7D28008776EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6395E4731CAA7D28008776EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6395E4741CAA7D28008776EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6395E47C1CAA7D28008776EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6395E4811CAA7D28008776EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6395E4871CAA8751008776EE /* BTPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPTabBarController.h; sourceTree = "<group>"; };
-		6395E4881CAA8751008776EE /* BTPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPTabBarController.m; sourceTree = "<group>"; };
-		6395E48A1CAA90FD008776EE /* BTPEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPEssenceViewController.h; sourceTree = "<group>"; };
-		6395E48B1CAA90FD008776EE /* BTPEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPEssenceViewController.m; sourceTree = "<group>"; };
-		6395E48D1CAA910A008776EE /* BTPNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPNewViewController.h; sourceTree = "<group>"; };
-		6395E48E1CAA910A008776EE /* BTPNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPNewViewController.m; sourceTree = "<group>"; };
-		6395E4901CAA9119008776EE /* BTPFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPFriendTrendsViewController.h; sourceTree = "<group>"; };
-		6395E4911CAA9119008776EE /* BTPFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPFriendTrendsViewController.m; sourceTree = "<group>"; };
-		6395E4931CAA911F008776EE /* BTPMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPMeViewController.h; sourceTree = "<group>"; };
-		6395E4941CAA911F008776EE /* BTPMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPMeViewController.m; sourceTree = "<group>"; };
-		6395E4961CABE274008776EE /* BTPTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPTabBar.h; sourceTree = "<group>"; };
-		6395E4971CABE274008776EE /* BTPTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPTabBar.m; sourceTree = "<group>"; };
+		DBE87DA6EC7457EC9124B138 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +72,165 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C6CAA4AA023577DC3660BAC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A9FAB86D6BFD084846835E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DACD782380BC2BC7D13844F /* Pods.debug.xcconfig */,
+				04F398B6AAE945DC2961CA85 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6366ECBE1CB0D0180065CF0B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECBF1CB0D0310065CF0B /* Essence */,
+				6366ECC61CB0D0CA0065CF0B /* New */,
+				6366ECCB1CB0D0EB0065CF0B /* FriendTrends */,
+				6366ECD01CB0D1250065CF0B /* Me */,
+				6366ECD51CB0D1990065CF0B /* Others */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		6366ECBF1CB0D0310065CF0B /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECC01CB0D03E0065CF0B /* Controller */,
+			);
+			name = Essence;
+			sourceTree = "<group>";
+		};
+		6366ECC01CB0D03E0065CF0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECC11CB0D0500065CF0B /* BTPEssenceViewController.h */,
+				6366ECC21CB0D0500065CF0B /* BTPEssenceViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6366ECC61CB0D0CA0065CF0B /* New */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECC71CB0D0D40065CF0B /* Controller */,
+			);
+			name = New;
+			sourceTree = "<group>";
+		};
+		6366ECC71CB0D0D40065CF0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECC81CB0D0E30065CF0B /* BTPNewViewController.h */,
+				6366ECC91CB0D0E30065CF0B /* BTPNewViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6366ECCB1CB0D0EB0065CF0B /* FriendTrends */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECF41CB13F2B0065CF0B /* Model */,
+				6366ECCC1CB0D10F0065CF0B /* Controller */,
+			);
+			name = FriendTrends;
+			sourceTree = "<group>";
+		};
+		6366ECCC1CB0D10F0065CF0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECCD1CB0D11D0065CF0B /* BTPFriendTrendsViewController.h */,
+				6366ECCE1CB0D11D0065CF0B /* BTPFriendTrendsViewController.m */,
+				6366ECEB1CB107D20065CF0B /* BTPFriendTrendsViewController.xib */,
+				6366ECED1CB114800065CF0B /* BTPRecommandViewController.h */,
+				6366ECEE1CB114800065CF0B /* BTPRecommandViewController.m */,
+				6366ECEF1CB114800065CF0B /* BTPRecommandViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6366ECD01CB0D1250065CF0B /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECD11CB0D12A0065CF0B /* Controller */,
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		6366ECD11CB0D12A0065CF0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECD21CB0D13B0065CF0B /* BTPMeViewController.h */,
+				6366ECD31CB0D13B0065CF0B /* BTPMeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6366ECD51CB0D1990065CF0B /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECF21CB133060065CF0B /* Foundation+Log.m */,
+				6366ECD81CB0D1B20065CF0B /* View */,
+				6366ECD71CB0D1A50065CF0B /* Controller */,
+				6366ECD61CB0D19E0065CF0B /* Category */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		6366ECD61CB0D19E0065CF0B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECD91CB0D1CB0065CF0B /* UIBarButtonItem+BTPExtension.h */,
+				6366ECDA1CB0D1CB0065CF0B /* UIBarButtonItem+BTPExtension.m */,
+				6366ECDB1CB0D1CB0065CF0B /* UIView+BTPExtension.h */,
+				6366ECDC1CB0D1CB0065CF0B /* UIView+BTPExtension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		6366ECD71CB0D1A50065CF0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECDF1CB0D1E10065CF0B /* BTPTabBarController.h */,
+				6366ECE01CB0D1E10065CF0B /* BTPTabBarController.m */,
+				6366ECE81CB0F8480065CF0B /* BTPNavigationController.h */,
+				6366ECE91CB0F8480065CF0B /* BTPNavigationController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6366ECD81CB0D1B20065CF0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECE21CB0D1EE0065CF0B /* BTPTabBar.h */,
+				6366ECE31CB0D1EE0065CF0B /* BTPTabBar.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6366ECF41CB13F2B0065CF0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECF51CB13F4E0065CF0B /* BTPRecommandCategory.h */,
+				6366ECF61CB13F4E0065CF0B /* BTPRecommandCategory.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		6395E4641CAA7D27008776EE = {
 			isa = PBXGroup;
 			children = (
 				6395E46F1CAA7D28008776EE /* BaiSiBuDeJie */,
 				6395E46E1CAA7D28008776EE /* Products */,
+				0A9FAB86D6BFD084846835E3 /* Pods */,
+				FC4270E3469667F9C67FE12B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,24 +245,9 @@
 		6395E46F1CAA7D28008776EE /* BaiSiBuDeJie */ = {
 			isa = PBXGroup;
 			children = (
+				6366ECBE1CB0D0180065CF0B /* Class */,
 				6395E4731CAA7D28008776EE /* AppDelegate.h */,
 				6395E4741CAA7D28008776EE /* AppDelegate.m */,
-				6395E4871CAA8751008776EE /* BTPTabBarController.h */,
-				6395E4881CAA8751008776EE /* BTPTabBarController.m */,
-				6395E4961CABE274008776EE /* BTPTabBar.h */,
-				6395E4971CABE274008776EE /* BTPTabBar.m */,
-				6395E48A1CAA90FD008776EE /* BTPEssenceViewController.h */,
-				6395E48B1CAA90FD008776EE /* BTPEssenceViewController.m */,
-				6395E48D1CAA910A008776EE /* BTPNewViewController.h */,
-				6395E48E1CAA910A008776EE /* BTPNewViewController.m */,
-				6395E4901CAA9119008776EE /* BTPFriendTrendsViewController.h */,
-				6395E4911CAA9119008776EE /* BTPFriendTrendsViewController.m */,
-				6395E4931CAA911F008776EE /* BTPMeViewController.h */,
-				6395E4941CAA911F008776EE /* BTPMeViewController.m */,
-				635726921CAFB9450000FB71 /* UIView+BTPExtension.h */,
-				635726931CAFB9450000FB71 /* UIView+BTPExtension.m */,
-				635726961CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.h */,
-				635726971CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.m */,
 				635726951CAFB9900000FB71 /* PrefixHeader.pch */,
 				6395E47C1CAA7D28008776EE /* Assets.xcassets */,
 				6395E4811CAA7D28008776EE /* Info.plist */,
@@ -110,6 +264,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FC4270E3469667F9C67FE12B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBE87DA6EC7457EC9124B138 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,9 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6395E4841CAA7D28008776EE /* Build configuration list for PBXNativeTarget "BaiSiBuDeJie" */;
 			buildPhases = (
+				365703AEB9E8EDF1A15E9AB7 /* Check Pods Manifest.lock */,
 				6395E4691CAA7D28008776EE /* Sources */,
 				6395E46A1CAA7D28008776EE /* Frameworks */,
 				6395E46B1CAA7D28008776EE /* Resources */,
+				1306C87C2C61E6D35F791ABB /* Embed Pods Frameworks */,
+				2A0035F2D813E6D80FA00EEB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,27 +334,82 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6366ECEC1CB107D20065CF0B /* BTPFriendTrendsViewController.xib in Resources */,
 				6395E47D1CAA7D28008776EE /* Assets.xcassets in Resources */,
+				6366ECF11CB114800065CF0B /* BTPRecommandViewController.xib in Resources */,
+				6357269A1CB0C9EF0000FB71 /* Class in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1306C87C2C61E6D35F791ABB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A0035F2D813E6D80FA00EEB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		365703AEB9E8EDF1A15E9AB7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6395E4691CAA7D28008776EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6395E4981CABE274008776EE /* BTPTabBar.m in Sources */,
-				635726941CAFB9450000FB71 /* UIView+BTPExtension.m in Sources */,
-				6395E48C1CAA90FD008776EE /* BTPEssenceViewController.m in Sources */,
+				6366ECCA1CB0D0E30065CF0B /* BTPNewViewController.m in Sources */,
+				6366ECE11CB0D1E10065CF0B /* BTPTabBarController.m in Sources */,
+				6366ECF01CB114800065CF0B /* BTPRecommandViewController.m in Sources */,
+				6366ECD41CB0D13B0065CF0B /* BTPMeViewController.m in Sources */,
+				6366ECC31CB0D0500065CF0B /* BTPEssenceViewController.m in Sources */,
 				6395E4751CAA7D28008776EE /* AppDelegate.m in Sources */,
-				6395E4951CAA911F008776EE /* BTPMeViewController.m in Sources */,
-				6395E4891CAA8751008776EE /* BTPTabBarController.m in Sources */,
-				6395E48F1CAA910A008776EE /* BTPNewViewController.m in Sources */,
+				6366ECEA1CB0F8480065CF0B /* BTPNavigationController.m in Sources */,
+				6366ECCF1CB0D11D0065CF0B /* BTPFriendTrendsViewController.m in Sources */,
+				6366ECE41CB0D1EE0065CF0B /* BTPTabBar.m in Sources */,
+				6366ECF71CB13F4E0065CF0B /* BTPRecommandCategory.m in Sources */,
 				6395E4721CAA7D28008776EE /* main.m in Sources */,
-				6395E4921CAA9119008776EE /* BTPFriendTrendsViewController.m in Sources */,
-				635726981CAFC7950000FB71 /* UIBarButtonItem+BTPExtension.m in Sources */,
+				6366ECF31CB133060065CF0B /* Foundation+Log.m in Sources */,
+				6366ECDD1CB0D1CB0065CF0B /* UIBarButtonItem+BTPExtension.m in Sources */,
+				6366ECDE1CB0D1CB0065CF0B /* UIView+BTPExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +500,9 @@
 		};
 		6395E4851CAA7D28008776EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DACD782380BC2BC7D13844F /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -295,7 +517,9 @@
 		};
 		6395E4861CAA7D28008776EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04F398B6AAE945DC2961CA85 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;

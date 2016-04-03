@@ -26,5 +26,11 @@
 //打印function
 #define BTPLogFunc BTPLog(@"%s", __func__);
 
+//设置全局背景色
+
+#define BTPBackgroundColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(r)/255.0 blue:(r)/255.0 alpha:1.0]
+
+#define BTPGlobalBackgoundColor BTPBackgroundColor(223, 223, 223)
+
 
 #endif /* PrefixHeader_pch */
