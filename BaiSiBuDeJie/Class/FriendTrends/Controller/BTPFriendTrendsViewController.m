@@ -7,7 +7,7 @@
 //
 
 #import "BTPFriendTrendsViewController.h"
-#import "BTPRecommandViewController.h"
+#import "BTPRecommendViewController.h"
 
 @interface BTPFriendTrendsViewController ()
 
@@ -31,7 +31,7 @@
 
 - (void)recommendButtonDidClick{
     
-    BTPRecommandViewController * recommendVC = [[BTPRecommandViewController alloc] init];
+    BTPRecommendViewController * recommendVC = [[BTPRecommendViewController alloc] init];
     [self.navigationController pushViewController:recommendVC animated:YES];
 }
 

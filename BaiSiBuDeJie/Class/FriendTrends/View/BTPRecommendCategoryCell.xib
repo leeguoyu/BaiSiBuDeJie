@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="category" rowHeight="28" id="KGk-i7-Jjw" customClass="BTPRecommendCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="29.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-9X-gCT" userLabel="selectedIndicator">
+                        <rect key="frame" x="0.0" y="0.0" width="4" height="29.5"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="4" id="w1g-cg-ogj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="yW7-9X-gCT" secondAttribute="bottom" constant="-8" id="L00-37-dSn"/>
+                    <constraint firstItem="yW7-9X-gCT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="dCT-9j-g8x"/>
+                    <constraint firstItem="yW7-9X-gCT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="ffh-JN-Jcf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="selectedIndicator" destination="yW7-9X-gCT" id="96T-HM-ahV"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="257"/>
+        </tableViewCell>
+    </objects>
+</document>

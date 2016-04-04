@@ -1,5 +1,5 @@
 //
-//  BTPRecommandCategory.h
+//  BTPRecommendCategory.h
 //  BaiSiBuDeJie
 //
 //  Created by leeguoyu on 16/4/3.
@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BTPRecommandCategory : NSObject
+@interface BTPRecommendCategory : NSObject
 
 /** id */
-@property (nonatomic, assign) NSInteger * id;
+@property (nonatomic, assign) NSInteger idd;
 /** 总数 */
-@property (nonatomic, assign) NSInteger * count;
+@property (nonatomic, assign) NSInteger count;
 /** 名字 */
 @property (nonatomic, copy) NSString * name;
 

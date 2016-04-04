@@ -1,13 +1,13 @@
 //
-//  BTPRecommandCategory.m
+//  BTPRecommendCategory.m
 //  BaiSiBuDeJie
 //
 //  Created by leeguoyu on 16/4/3.
 //  Copyright © 2016年 leeguoyu. All rights reserved.
 //
 
-#import "BTPRecommandCategory.h"
+#import "BTPRecommendCategory.h"
 
-@implementation BTPRecommandCategory
+@implementation BTPRecommendCategory
 
 @end

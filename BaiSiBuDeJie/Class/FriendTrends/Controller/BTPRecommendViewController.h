@@ -1,5 +1,5 @@
 //
-//  BTPRecommandViewController.h
+//  BTPRecommendViewController.h
 //  BaiSiBuDeJie
 //
 //  Created by leeguoyu on 16/4/3.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BTPRecommandViewController : UIViewController
-
+@interface BTPRecommendViewController : UIViewController
 
 @end

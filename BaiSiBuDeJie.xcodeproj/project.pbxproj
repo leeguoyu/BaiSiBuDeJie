@@ -19,10 +19,12 @@
 		6366ECE41CB0D1EE0065CF0B /* BTPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECE31CB0D1EE0065CF0B /* BTPTabBar.m */; };
 		6366ECEA1CB0F8480065CF0B /* BTPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECE91CB0F8480065CF0B /* BTPNavigationController.m */; };
 		6366ECEC1CB107D20065CF0B /* BTPFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6366ECEB1CB107D20065CF0B /* BTPFriendTrendsViewController.xib */; };
-		6366ECF01CB114800065CF0B /* BTPRecommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECEE1CB114800065CF0B /* BTPRecommandViewController.m */; };
-		6366ECF11CB114800065CF0B /* BTPRecommandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6366ECEF1CB114800065CF0B /* BTPRecommandViewController.xib */; };
+		6366ECF01CB114800065CF0B /* BTPRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECEE1CB114800065CF0B /* BTPRecommendViewController.m */; };
+		6366ECF11CB114800065CF0B /* BTPRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6366ECEF1CB114800065CF0B /* BTPRecommendViewController.xib */; };
 		6366ECF31CB133060065CF0B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECF21CB133060065CF0B /* Foundation+Log.m */; };
-		6366ECF71CB13F4E0065CF0B /* BTPRecommandCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECF61CB13F4E0065CF0B /* BTPRecommandCategory.m */; };
+		6366ECF71CB13F4E0065CF0B /* BTPRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECF61CB13F4E0065CF0B /* BTPRecommendCategory.m */; };
+		6366ECFC1CB147950065CF0B /* BTPRecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECFA1CB147950065CF0B /* BTPRecommendCategoryCell.m */; };
+		6366ECFD1CB147950065CF0B /* BTPRecommendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6366ECFB1CB147950065CF0B /* BTPRecommendCategoryCell.xib */; };
 		6395E4721CAA7D28008776EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4711CAA7D28008776EE /* main.m */; };
 		6395E4751CAA7D28008776EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4741CAA7D28008776EE /* AppDelegate.m */; };
 		6395E47D1CAA7D28008776EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6395E47C1CAA7D28008776EE /* Assets.xcassets */; };
@@ -52,12 +54,15 @@
 		6366ECE81CB0F8480065CF0B /* BTPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPNavigationController.h; path = Class/Others/Controller/BTPNavigationController.h; sourceTree = "<group>"; };
 		6366ECE91CB0F8480065CF0B /* BTPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPNavigationController.m; path = Class/Others/Controller/BTPNavigationController.m; sourceTree = "<group>"; };
 		6366ECEB1CB107D20065CF0B /* BTPFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTPFriendTrendsViewController.xib; path = Class/FriendTrends/Controller/BTPFriendTrendsViewController.xib; sourceTree = "<group>"; };
-		6366ECED1CB114800065CF0B /* BTPRecommandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPRecommandViewController.h; path = Class/FriendTrends/Controller/BTPRecommandViewController.h; sourceTree = "<group>"; };
-		6366ECEE1CB114800065CF0B /* BTPRecommandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPRecommandViewController.m; path = Class/FriendTrends/Controller/BTPRecommandViewController.m; sourceTree = "<group>"; };
-		6366ECEF1CB114800065CF0B /* BTPRecommandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTPRecommandViewController.xib; path = Class/FriendTrends/Controller/BTPRecommandViewController.xib; sourceTree = "<group>"; };
+		6366ECED1CB114800065CF0B /* BTPRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPRecommendViewController.h; path = Class/FriendTrends/Controller/BTPRecommendViewController.h; sourceTree = "<group>"; };
+		6366ECEE1CB114800065CF0B /* BTPRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPRecommendViewController.m; path = Class/FriendTrends/Controller/BTPRecommendViewController.m; sourceTree = "<group>"; };
+		6366ECEF1CB114800065CF0B /* BTPRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTPRecommendViewController.xib; path = Class/FriendTrends/Controller/BTPRecommendViewController.xib; sourceTree = "<group>"; };
 		6366ECF21CB133060065CF0B /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Foundation+Log.m"; path = "Class/Others/Foundation+Log.m"; sourceTree = "<group>"; };
-		6366ECF51CB13F4E0065CF0B /* BTPRecommandCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPRecommandCategory.h; path = Class/FriendTrends/Model/BTPRecommandCategory.h; sourceTree = "<group>"; };
-		6366ECF61CB13F4E0065CF0B /* BTPRecommandCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPRecommandCategory.m; path = Class/FriendTrends/Model/BTPRecommandCategory.m; sourceTree = "<group>"; };
+		6366ECF51CB13F4E0065CF0B /* BTPRecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPRecommendCategory.h; path = Class/FriendTrends/Model/BTPRecommendCategory.h; sourceTree = "<group>"; };
+		6366ECF61CB13F4E0065CF0B /* BTPRecommendCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPRecommendCategory.m; path = Class/FriendTrends/Model/BTPRecommendCategory.m; sourceTree = "<group>"; };
+		6366ECF91CB147950065CF0B /* BTPRecommendCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPRecommendCategoryCell.h; path = Class/FriendTrends/View/BTPRecommendCategoryCell.h; sourceTree = "<group>"; };
+		6366ECFA1CB147950065CF0B /* BTPRecommendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPRecommendCategoryCell.m; path = Class/FriendTrends/View/BTPRecommendCategoryCell.m; sourceTree = "<group>"; };
+		6366ECFB1CB147950065CF0B /* BTPRecommendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTPRecommendCategoryCell.xib; path = Class/FriendTrends/View/BTPRecommendCategoryCell.xib; sourceTree = "<group>"; };
 		6395E46D1CAA7D28008776EE /* BaiSiBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiSiBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6395E4711CAA7D28008776EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6395E4731CAA7D28008776EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +142,7 @@
 		6366ECCB1CB0D0EB0065CF0B /* FriendTrends */ = {
 			isa = PBXGroup;
 			children = (
+				6366ECF81CB145960065CF0B /* View */,
 				6366ECF41CB13F2B0065CF0B /* Model */,
 				6366ECCC1CB0D10F0065CF0B /* Controller */,
 			);
@@ -149,9 +155,9 @@
 				6366ECCD1CB0D11D0065CF0B /* BTPFriendTrendsViewController.h */,
 				6366ECCE1CB0D11D0065CF0B /* BTPFriendTrendsViewController.m */,
 				6366ECEB1CB107D20065CF0B /* BTPFriendTrendsViewController.xib */,
-				6366ECED1CB114800065CF0B /* BTPRecommandViewController.h */,
-				6366ECEE1CB114800065CF0B /* BTPRecommandViewController.m */,
-				6366ECEF1CB114800065CF0B /* BTPRecommandViewController.xib */,
+				6366ECED1CB114800065CF0B /* BTPRecommendViewController.h */,
+				6366ECEE1CB114800065CF0B /* BTPRecommendViewController.m */,
+				6366ECEF1CB114800065CF0B /* BTPRecommendViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -218,10 +224,20 @@
 		6366ECF41CB13F2B0065CF0B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6366ECF51CB13F4E0065CF0B /* BTPRecommandCategory.h */,
-				6366ECF61CB13F4E0065CF0B /* BTPRecommandCategory.m */,
+				6366ECF51CB13F4E0065CF0B /* BTPRecommendCategory.h */,
+				6366ECF61CB13F4E0065CF0B /* BTPRecommendCategory.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		6366ECF81CB145960065CF0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6366ECF91CB147950065CF0B /* BTPRecommendCategoryCell.h */,
+				6366ECFA1CB147950065CF0B /* BTPRecommendCategoryCell.m */,
+				6366ECFB1CB147950065CF0B /* BTPRecommendCategoryCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		6395E4641CAA7D27008776EE = {
@@ -334,9 +350,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6366ECFD1CB147950065CF0B /* BTPRecommendCategoryCell.xib in Resources */,
 				6366ECEC1CB107D20065CF0B /* BTPFriendTrendsViewController.xib in Resources */,
 				6395E47D1CAA7D28008776EE /* Assets.xcassets in Resources */,
-				6366ECF11CB114800065CF0B /* BTPRecommandViewController.xib in Resources */,
+				6366ECF11CB114800065CF0B /* BTPRecommendViewController.xib in Resources */,
 				6357269A1CB0C9EF0000FB71 /* Class in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,14 +415,15 @@
 			files = (
 				6366ECCA1CB0D0E30065CF0B /* BTPNewViewController.m in Sources */,
 				6366ECE11CB0D1E10065CF0B /* BTPTabBarController.m in Sources */,
-				6366ECF01CB114800065CF0B /* BTPRecommandViewController.m in Sources */,
+				6366ECF01CB114800065CF0B /* BTPRecommendViewController.m in Sources */,
 				6366ECD41CB0D13B0065CF0B /* BTPMeViewController.m in Sources */,
 				6366ECC31CB0D0500065CF0B /* BTPEssenceViewController.m in Sources */,
 				6395E4751CAA7D28008776EE /* AppDelegate.m in Sources */,
 				6366ECEA1CB0F8480065CF0B /* BTPNavigationController.m in Sources */,
 				6366ECCF1CB0D11D0065CF0B /* BTPFriendTrendsViewController.m in Sources */,
 				6366ECE41CB0D1EE0065CF0B /* BTPTabBar.m in Sources */,
-				6366ECF71CB13F4E0065CF0B /* BTPRecommandCategory.m in Sources */,
+				6366ECF71CB13F4E0065CF0B /* BTPRecommendCategory.m in Sources */,
+				6366ECFC1CB147950065CF0B /* BTPRecommendCategoryCell.m in Sources */,
 				6395E4721CAA7D28008776EE /* main.m in Sources */,
 				6366ECF31CB133060065CF0B /* Foundation+Log.m in Sources */,
 				6366ECDD1CB0D1CB0065CF0B /* UIBarButtonItem+BTPExtension.m in Sources */,
