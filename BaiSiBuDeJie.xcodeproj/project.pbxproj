@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1C6CAA4AA023577DC3660BAC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE87DA6EC7457EC9124B138 /* libPods.a */; };
+		6303112C1CC7DA4A00B72BBF /* BTPRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6303112A1CC7DA4A00B72BBF /* BTPRecommendUserCell.m */; };
+		6303112D1CC7DA4A00B72BBF /* BTPRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6303112B1CC7DA4A00B72BBF /* BTPRecommendUserCell.xib */; };
+		630311301CC7ED6300B72BBF /* BTPRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6303112F1CC7ED6300B72BBF /* BTPRecommendUser.m */; };
 		6357269A1CB0C9EF0000FB71 /* Class in Resources */ = {isa = PBXBuildFile; fileRef = 635726991CB0C9EF0000FB71 /* Class */; };
 		6366ECC31CB0D0500065CF0B /* BTPEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECC21CB0D0500065CF0B /* BTPEssenceViewController.m */; };
 		6366ECCA1CB0D0E30065CF0B /* BTPNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366ECC91CB0D0E30065CF0B /* BTPNewViewController.m */; };
@@ -33,6 +36,11 @@
 /* Begin PBXFileReference section */
 		04F398B6AAE945DC2961CA85 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4DACD782380BC2BC7D13844F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		630311291CC7DA4A00B72BBF /* BTPRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPRecommendUserCell.h; path = Class/FriendTrends/View/BTPRecommendUserCell.h; sourceTree = "<group>"; };
+		6303112A1CC7DA4A00B72BBF /* BTPRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPRecommendUserCell.m; path = Class/FriendTrends/View/BTPRecommendUserCell.m; sourceTree = "<group>"; };
+		6303112B1CC7DA4A00B72BBF /* BTPRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTPRecommendUserCell.xib; path = Class/FriendTrends/View/BTPRecommendUserCell.xib; sourceTree = "<group>"; };
+		6303112E1CC7ED6300B72BBF /* BTPRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPRecommendUser.h; path = Class/FriendTrends/Model/BTPRecommendUser.h; sourceTree = "<group>"; };
+		6303112F1CC7ED6300B72BBF /* BTPRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPRecommendUser.m; path = Class/FriendTrends/Model/BTPRecommendUser.m; sourceTree = "<group>"; };
 		635726951CAFB9900000FB71 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		635726991CB0C9EF0000FB71 /* Class */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Class; path = /Users/leeguoyu/GitHub/BaiSiBuDeJie/BaiSiBuDeJie/Class; sourceTree = "<absolute>"; };
 		6366ECC11CB0D0500065CF0B /* BTPEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPEssenceViewController.h; path = Class/Essence/Controller/BTPEssenceViewController.h; sourceTree = "<group>"; };
@@ -226,6 +234,8 @@
 			children = (
 				6366ECF51CB13F4E0065CF0B /* BTPRecommendCategory.h */,
 				6366ECF61CB13F4E0065CF0B /* BTPRecommendCategory.m */,
+				6303112E1CC7ED6300B72BBF /* BTPRecommendUser.h */,
+				6303112F1CC7ED6300B72BBF /* BTPRecommendUser.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -236,6 +246,9 @@
 				6366ECF91CB147950065CF0B /* BTPRecommendCategoryCell.h */,
 				6366ECFA1CB147950065CF0B /* BTPRecommendCategoryCell.m */,
 				6366ECFB1CB147950065CF0B /* BTPRecommendCategoryCell.xib */,
+				630311291CC7DA4A00B72BBF /* BTPRecommendUserCell.h */,
+				6303112A1CC7DA4A00B72BBF /* BTPRecommendUserCell.m */,
+				6303112B1CC7DA4A00B72BBF /* BTPRecommendUserCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -354,6 +367,7 @@
 				6366ECEC1CB107D20065CF0B /* BTPFriendTrendsViewController.xib in Resources */,
 				6395E47D1CAA7D28008776EE /* Assets.xcassets in Resources */,
 				6366ECF11CB114800065CF0B /* BTPRecommendViewController.xib in Resources */,
+				6303112D1CC7DA4A00B72BBF /* BTPRecommendUserCell.xib in Resources */,
 				6357269A1CB0C9EF0000FB71 /* Class in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,8 +427,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6303112C1CC7DA4A00B72BBF /* BTPRecommendUserCell.m in Sources */,
 				6366ECCA1CB0D0E30065CF0B /* BTPNewViewController.m in Sources */,
 				6366ECE11CB0D1E10065CF0B /* BTPTabBarController.m in Sources */,
+				630311301CC7ED6300B72BBF /* BTPRecommendUser.m in Sources */,
 				6366ECF01CB114800065CF0B /* BTPRecommendViewController.m in Sources */,
 				6366ECD41CB0D13B0065CF0B /* BTPMeViewController.m in Sources */,
 				6366ECC31CB0D0500065CF0B /* BTPEssenceViewController.m in Sources */,
