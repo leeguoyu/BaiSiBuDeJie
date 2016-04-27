@@ -150,8 +150,8 @@
 		6366ECCB1CB0D0EB0065CF0B /* FriendTrends */ = {
 			isa = PBXGroup;
 			children = (
-				6366ECF81CB145960065CF0B /* View */,
 				6366ECF41CB13F2B0065CF0B /* Model */,
+				6366ECF81CB145960065CF0B /* View */,
 				6366ECCC1CB0D10F0065CF0B /* Controller */,
 			);
 			name = FriendTrends;

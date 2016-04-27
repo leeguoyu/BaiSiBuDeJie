@@ -14,6 +14,10 @@
 #import "BTPRecommendCategory.h"
 #import "BTPRecommendUserCell.h"
 #import "BTPRecommendUser.h"
+#import <MJRefresh.h>
+
+//类别被选中后，右边的用户数据
+#define BTPSelectedCategory self.categories[self.categoryTableView.indexPathForSelectedRow.row]
 
 @interface BTPRecommendViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -22,8 +26,6 @@
 //** 左边的类别列表表格 */
 @property (weak, nonatomic) IBOutlet UITableView *categoryTableView;
 
-/** 右边的用户数据 */
-@property (nonatomic, strong) NSArray * users;
 //** 右边的用户列表表格 */
 @property (weak, nonatomic) IBOutlet UITableView *userTableView;
 
@@ -41,6 +43,9 @@ static NSString * const BTPUserCellId = @"user";
     //初始化tableview
     [self setupTableView];
     
+    //右侧表格添加刷新控件
+    [self setupRefresh];
+
     NSMutableDictionary * params = [NSMutableDictionary dictionary];
     params[@"a"] = @"category";
     params[@"c"] = @"subscribe";
@@ -64,6 +69,47 @@ static NSString * const BTPUserCellId = @"user";
         [SVProgressHUD showErrorWithStatus:@"数据加载失败"];
     }];
     
+}
+
+#pragma mark - 添加刷新控件
+- (void)setupRefresh{
+    
+    self.userTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
+    
+    self.userTableView.mj_footer.hidden = YES;
+    
+}
+
+#pragma mark - 右边表格加在更多用户
+- (void)loadMoreUsers{
+    
+    BTPRecommendCategory *category = BTPSelectedCategory;
+    
+    //加在右侧数据
+    NSMutableDictionary * params = [NSMutableDictionary dictionary];
+    
+    params[@"a"] = @"list";
+    params[@"c"] = @"subscribe";
+    params[@"category_id"] = @(category.id);
+    params[@"page"] = @"2";
+    
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        //字典数组 -> 模型数组
+        NSArray * users = [BTPRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+
+        //添加到当前类别对应的数组中
+        [category.users addObjectsFromArray:users];
+        
+        [self.userTableView reloadData];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        BTPLog(@"%@", error);
+    }];
+    
+
 }
 
 #pragma mark - setupTableView
@@ -91,7 +137,10 @@ static NSString * const BTPUserCellId = @"user";
     if (tableView == self.categoryTableView) {
         return self.categories.count;
     }else{
-        return self.users.count;
+        //每次刷新右边表格时，判断是否需要隐藏刷新提示
+        self.userTableView.mj_footer.hidden = ([BTPSelectedCategory users].count == 0);
+        
+        return [BTPSelectedCategory users].count;
     }
 }
 
@@ -106,7 +155,8 @@ static NSString * const BTPUserCellId = @"user";
 
     }else{
         BTPRecommendUserCell * cell = [tableView dequeueReusableCellWithIdentifier:BTPUserCellId];
-        cell.user = self.users[indexPath.row];
+        
+        cell.user = [BTPSelectedCategory users][indexPath.row];
         return cell;
     }
 }
@@ -115,30 +165,39 @@ static NSString * const BTPUserCellId = @"user";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    BTPRecommendCategory * c = self.categories[indexPath.row];
-    
-    NSMutableDictionary * params = [NSMutableDictionary dictionary];
-    
-    params[@"a"] = @"list";
-    params[@"c"] = @"subscribe";
-    params[@"category_id"] = @(c.id);
-    
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
-        
-        [SVProgressHUD show];
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        [SVProgressHUD dismiss];
-        
-        self.users = [BTPRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-    
+    if ([BTPSelectedCategory users].count) {
+        //显示曾经的数据
         [self.userTableView reloadData];
         
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        BTPLog(@"%@", error);
-    }];
-    
+    }else{
+        //加在右侧数据
+        NSMutableDictionary * params = [NSMutableDictionary dictionary];
+        
+        params[@"a"] = @"list";
+        params[@"c"] = @"subscribe";
+        params[@"category_id"] = @([BTPSelectedCategory id]);
+        
+        [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+            [SVProgressHUD show];
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            [SVProgressHUD dismiss];
+            
+            //字典数组 -> 模型数组
+            NSArray * users = [BTPRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+            
+            //添加到当前类别对应的数组中
+            [[BTPSelectedCategory users] addObjectsFromArray:users];
+            
+            [self.userTableView reloadData];
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            BTPLog(@"%@", error);
+        }];
+
+    }
 }
 
 
