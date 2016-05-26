@@ -91,7 +91,7 @@ static NSString * const BTPUserCellId = @"user";
     params[@"a"] = @"list";
     params[@"c"] = @"subscribe";
     params[@"category_id"] = @(category.id);
-    params[@"page"] = @"2";
+    params[@"page"] = @(++category.currentPage);
     
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
@@ -103,7 +103,16 @@ static NSString * const BTPUserCellId = @"user";
         //添加到当前类别对应的数组中
         [category.users addObjectsFromArray:users];
         
+        //刷新数据
         [self.userTableView reloadData];
+        
+        //结束刷新
+        if (category.users.count == category.total) { //全部加载完毕
+            [self.userTableView.mj_footer endRefreshingWithNoMoreData];
+        }else{
+            [self.userTableView.mj_footer endRefreshing];
+
+        }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         BTPLog(@"%@", error);
@@ -165,17 +174,27 @@ static NSString * const BTPUserCellId = @"user";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    BTPRecommendCategory * category = self.categories[indexPath.row];
+
     if ([BTPSelectedCategory users].count) {
         //显示曾经的数据
         [self.userTableView reloadData];
         
     }else{
-        //加在右侧数据
+        
+        //刷新表格
+        [self.userTableView reloadData];
+        
+        //设置当前页码为 1
+        category.currentPage = 1;
+        
+        //发送请求，加载右侧数据
         NSMutableDictionary * params = [NSMutableDictionary dictionary];
         
         params[@"a"] = @"list";
         params[@"c"] = @"subscribe";
         params[@"category_id"] = @([BTPSelectedCategory id]);
+        params[@"page"] = @(category.currentPage);
         
         [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
             
@@ -191,7 +210,15 @@ static NSString * const BTPUserCellId = @"user";
             //添加到当前类别对应的数组中
             [[BTPSelectedCategory users] addObjectsFromArray:users];
             
+            //保存总数
+            category.total = [responseObject[@"total"] integerValue];
+            
+            //刷新数据
             [self.userTableView reloadData];
+            
+            if (category.users.count == category.total) { //完全加载
+                [self.userTableView.mj_footer endRefreshingWithNoMoreData];
+            }
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             BTPLog(@"%@", error);
